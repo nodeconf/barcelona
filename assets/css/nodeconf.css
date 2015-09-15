@@ -1,0 +1,144 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+a {
+  color: #7aab13;
+}
+
+body {
+  margin-bottom: 300px;
+  font: 300 14px/1.5 "Source Sans Pro", Open Sans, Roboto, Helvetica, Arial, sans-serif;
+}
+
+p, a, span {
+  font: 300 14px/1.5 "Source Sans Pro", Open Sans, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 50px;
+}
+
+.btn {
+  background-color: #7aab13;
+  color: white;
+}
+
+.nodeconf {
+  display: block;
+  max-width: 350px;
+  height: 50px;
+  width: 350px;
+  color: white;
+  background-image: url(/assets/img/nodeconf.svg);
+}
+
+.venue-hexagon {
+  position: relative;
+  width: 165px;
+  left: 44px;
+  height: 95.26px;
+  margin: 47.63px 0;
+  background-color: #88bf43;
+  background-size: auto 190.52561px;
+  background-position: center;
+  display: inline-block;
+  text-align: left;
+  /*counter transform the bg image on the caps*/
+}
+
+.venue-hexagon.hexagon-center {
+  margin-left: -82.5px;
+}
+
+.venue-hexagon.hexagon-tile {
+  margin-left: -41.25px;
+  margin-right: 41.25px;
+  margin-bottom: 0;
+}
+
+.venue-hexagon .hexTop,
+.venue-hexagon .hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 116.677px;
+  height: 116.677px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 24.167px;
+}
+
+.venue-hexagon .hexTop:after,
+.venue-hexagon .hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 95.26279px;
+  -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-47.63143px);
+  -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-47.63143px);
+  transform: rotate(45deg) scaleY(1.7321) translateY(-47.63143px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.venue-hexagon .hexTop {
+  top: -58.3363px;
+}
+
+.venue-hexagon .hexTop:after {
+  background-position: center top;
+}
+
+.venue-hexagon .hexBottom {
+  bottom: -58.3363px;
+}
+
+.venue-hexagon .hexBottom:after {
+  background-position: center bottom;
+}
+
+.venue-hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 165px;
+  height: 95.26275px;
+  z-index: 2;
+  background: inherit;
+}
+
+.venue-hexagon-col {
+  margin-bottom: 30px;
+}
+
+.footer {
+  margin-top: 25px;
+  background-color: #404042;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 250px;
+}
+
+.footer p {
+  color: #f0f0f0;
+}
+
+.footer a {
+  color: #7aab13;
+}
+
+.logo-footer {
+  width: 100px;
+  height: 100px;
+}
