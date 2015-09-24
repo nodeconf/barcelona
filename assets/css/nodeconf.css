@@ -120,6 +120,11 @@ p, a, span {
   margin-bottom: 30px;
 }
 
+.content {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
 .footer {
   margin-top: 25px;
   background-color: #404042;
@@ -141,4 +146,13 @@ p, a, span {
 .logo-footer {
   width: 100px;
   height: 100px;
+}
+
+.sponsors-table td:nth-child(2n+1) {
+  background-color: #f3f9ec;
+  text-shadow: 0 0.1em 0.1em white;
+}
+
+.sponsors-table td[colspan="5"] {
+  background-color: white;
 }
