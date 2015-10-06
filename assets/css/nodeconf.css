@@ -1,165 +1,266 @@
-html {
-  position: relative;
-  min-height: 100%;
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+html,
+body {
+  margin: 0;
+  font-family: Source Sans Pro;
+  font-size: 1.2em;
+  font-weight: 300;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  background: #333 url("/assets/img/bg-full.svg") no-repeat center center fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 550px;
+}
+
+.header a {
+  font-weight: 600;
+}
+
+.conf-title {
+  margin-top: 0;
+}
+
+.banner {
+  color: #333;
+  background-color: #ffffff;
+  height: 550px;
+  padding: 1em;
+}
+
+.logo {
+  width: 245px;
+  max-width: 50%;
+  margin-top: -1.5em;
+  margin-bottom: 1.5em;
+}
+
+a.btn:hover {
+  text-decoration: none;
+}
+
+a.btn {
+  padding: 0.5rem 1rem;
+  font-weight: 800;
+  font-size: 1.6em;
+  margin-bottom: 0.67em;
+  background-color: #7aab13;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+a.btn:hover {
+  background-color: #719e12;
+}
+
+.venue-location {
+  font-weight: 400;
 }
 
 a {
   color: #7aab13;
+  text-decoration: none;
 }
 
-body {
-  margin-bottom: 300px;
-  font: 300 14px/1.5 "Source Sans Pro", Open Sans, Roboto, Helvetica, Arial, sans-serif;
-}
-
-p, a, span {
-  font: 300 14px/1.5 "Source Sans Pro", Open Sans, Roboto, Helvetica, Arial, sans-serif;
-}
-
-.header {
-  background-color: #333;
-  color: white;
-  padding: 50px;
-}
-
-.btn {
-  background-color: #7aab13;
-  color: white;
-  border: 0;
-  margin: 25px;
-}
-
-.info {
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.nodeconf {
-  display: block;
-  max-width: 350px;
-  height: 50px;
-  width: 350px;
-  color: white;
-  background-image: url(/assets/img/nodeconf.svg);
-}
-
-.venue-hexagon {
-  position: relative;
-  width: 165px;
-  left: 44px;
-  height: 95.26px;
-  margin: 47.63px 0;
-  background-color: #88bf43;
-  background-size: auto 190.52561px;
-  background-position: center;
-  display: inline-block;
-  text-align: left;
-  /*counter transform the bg image on the caps*/
-}
-
-.venue-hexagon.hexagon-center {
-  margin-left: -82.5px;
-}
-
-.venue-hexagon.hexagon-tile {
-  margin-left: -41.25px;
-  margin-right: 41.25px;
-  margin-bottom: 0;
-}
-
-.venue-hexagon .hexTop,
-.venue-hexagon .hexBottom {
-  position: absolute;
-  z-index: 1;
-  width: 116.677px;
-  height: 116.677px;
-  overflow: hidden;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background: inherit;
-  left: 24.167px;
-}
-
-.venue-hexagon .hexTop:after,
-.venue-hexagon .hexBottom:after {
-  content: "";
-  position: absolute;
-  width: 165px;
-  height: 95.26279px;
-  -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-47.63143px);
-  -ms-transform: rotate(45deg) scaleY(1.7321) translateY(-47.63143px);
-  transform: rotate(45deg) scaleY(1.7321) translateY(-47.63143px);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  background: inherit;
-}
-
-.venue-hexagon .hexTop {
-  top: -58.3363px;
-}
-
-.venue-hexagon .hexTop:after {
-  background-position: center top;
-}
-
-.venue-hexagon .hexBottom {
-  bottom: -58.3363px;
-}
-
-.venue-hexagon .hexBottom:after {
-  background-position: center bottom;
-}
-
-.venue-hexagon:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 165px;
-  height: 95.26275px;
-  z-index: 2;
-  background: inherit;
-}
-
-.venue-hexagon-col {
-  margin-bottom: 30px;
-}
-
-.content {
+.wrap {
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 0 auto;
+  padding: 2em;
 }
 
-.footer {
-  margin-top: 25px;
-  background-color: #404042;
-  color: #fff;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  min-height: 250px;
+.teaser {
+  background-color: #7aab13;
+  font-size: 0.7em;
+  color: #ffffff;
 }
 
-.footer p {
-  color: #f0f0f0;
+.teaser a {
+  color: #ffffff;
 }
 
-.footer a {
+.introduction {
+  font-size: 1em;
+}
+
+.venue-features {
+  font-size: 0.9em;
+  padding-left: 2em;
   color: #7aab13;
 }
 
-.logo-footer {
+.col-explanation a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.feature {
+  float: left;
+  display: inline;
+  color: #7aab13;
+  font-weight: 400;
+}
+
+footer {
+  background-color: #333;
+  color: #ffffff;
+}
+
+footer .logo-footer-bcnjs {
   width: 100px;
-  height: 100px;
 }
 
-.sponsors-table td:nth-child(2n+1) {
-  background-color: #f3f9ec;
-  text-shadow: 0 0.1em 0.1em white;
+footer .logo-footer-nodeconf {
+  width: 250px;
 }
 
-.sponsors-table td[colspan="5"] {
-  background-color: white;
+footer .footer-right {
+  text-align: right;
+}
+
+footer .footer-left {
+  text-align: left;
+}
+
+.speaker {
+  float: left;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.speaker .speaker-portrait {
+  border-radius: 50%;
+  width: 45%;
+}
+
+.speaker .speaker-name {
+  color: #7aab13;
+}
+
+.speaker .speaker-talk {
+  font-size: 0.7em;
+  color: #7aab13;
+  display: none;
+}
+
+.speaker a {
+  color: #7aab13;
+  font-weight: 600;
+}
+
+.speakers {
+  background-color: #ffffff;
+}
+
+.schedule {
+  background-color: #eee;
+}
+
+.schedule .schedule-table {
+  float: left;
+}
+
+.schedule .schedule-table-workshop {
+  color: #333;
+  font-weight: normal;
+}
+
+tbody th {
+  color: #333;
+  font-weight: 400;
+  text-align: center;
+  width: 225px;
+}
+
+tbody td {
+  text-align: left;
+  padding-left: 1em;
+  background-color: #eee;
+}
+
+thead td {
+  font-weight: 800;
+  text-align: left;
+  color: #333;
+  padding: 0.6em !important;
+}
+
+table {
+  width: 100%;
+  border: none;
+  color: #7aab13;
+  font-weight: 600;
+}
+
+.sponsors .sponsor {
+  display: block;
+  height: 200px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sponsors .sponsor span {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  a.btn {
+    padding: 0.5rem 0.6rem;
+    font-size: 1.2em;
+  }
+  .logo {
+    min-width: 205px !important;
+    margin-bottom: 0.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .speaker-portrait {
+    width: 35% !important;
+  }
+  .footer-right,
+  .footer-left {
+    text-align: center !important;
+  }
+  .conf-title {
+    font-size: 1.3em;
+  }
+  .header {
+    background: #333 url("/assets/img/bg-full.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+  }
+  .banner {
+    background-color: white;
+    padding: 1.2em;
+  }
+  .logo {
+    margin-bottom: 0;
+  }
+  .conf-title,
+  .venue-location {
+    color: #333;
+  }
+}
+
+.coc {
+  font-size: 1.2em;
 }
