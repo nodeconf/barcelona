@@ -45,11 +45,11 @@ body {
   margin-bottom: 1.5em;
 }
 
-a.btn:hover {
+.header a.btn:hover {
   text-decoration: none;
 }
 
-a.btn {
+.header a.btn {
   padding: 0.5rem 1rem;
   font-weight: 800;
   font-size: 1.6em;
@@ -60,7 +60,7 @@ a.btn {
   border-radius: 2px;
 }
 
-a.btn:hover {
+.header a.btn:hover {
   background-color: #719e12;
 }
 
@@ -222,8 +222,15 @@ table {
   display: none;
 }
 
+.sponsors-table tr td {
+  font-weight: normal;
+  font-size: 16px;
+  color: #333;
+  padding: 5px;
+}
+
 @media (max-width: 1000px) {
-  a.btn {
+  .header a.btn {
     padding: 0.5rem 0.6rem;
     font-size: 1.2em;
   }
