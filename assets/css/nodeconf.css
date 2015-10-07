@@ -64,6 +64,24 @@ body {
   background-color: #719e12;
 }
 
+.btn {
+  display: inline-block;
+  padding: 25px;
+  margin: 25px;
+  font-weight: 600;
+  font-size: 1.6em;
+  background-color: #7aab13;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #7aab13;
+}
+
 .venue-location {
   font-weight: 400;
 }
