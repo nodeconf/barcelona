@@ -10,13 +10,13 @@ body {
 }
 
 .header {
-  background: #333 url("/assets/img/bg-full.svg") no-repeat center center fixed;
+  background: #222 url("/assets/img/bg-full.svg") no-repeat center center fixed;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #333;
+  color: #222;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -32,7 +32,7 @@ body {
 }
 
 .banner {
-  color: #333;
+  color: #222;
   background-color: #ffffff;
   height: 550px;
   padding: 1em;
@@ -41,8 +41,7 @@ body {
 .logo {
   width: 245px;
   max-width: 50%;
-  margin-top: -1.5em;
-  margin-bottom: 1.5em;
+  margin-top: -1.8em;
 }
 
 .header a.btn:hover {
@@ -54,23 +53,22 @@ body {
   font-weight: 800;
   font-size: 1.6em;
   margin-bottom: 0.67em;
-  background-color: #7aab13;
+  background-color: #269972;
   color: #ffffff;
   text-decoration: none;
   border-radius: 2px;
 }
 
 .header a.btn:hover {
-  background-color: #719e12;
+  background-color: #1e7a5b;
 }
 
 .btn {
   display: inline-block;
-  padding: 25px;
-  margin: 25px;
+  padding: 0.5rem 1rem;
   font-weight: 600;
   font-size: 1.6em;
-  background-color: #7aab13;
+  background-color: #269972;
   color: #ffffff;
   text-decoration: none;
   border-radius: 2px;
@@ -78,8 +76,8 @@ body {
 
 .btn:hover {
   text-decoration: none;
-  background-color: #ffffff;
-  color: #7aab13;
+  background-color: #1e7a5b;
+  color: #ffffff;
 }
 
 .venue-location {
@@ -87,7 +85,7 @@ body {
 }
 
 a {
-  color: #7aab13;
+  color: #269972;
   text-decoration: none;
 }
 
@@ -98,7 +96,7 @@ a {
 }
 
 .teaser {
-  background-color: #7aab13;
+  background-color: #269972;
   font-size: 0.7em;
   color: #ffffff;
 }
@@ -114,7 +112,7 @@ a {
 .venue-features {
   font-size: 0.9em;
   padding-left: 2em;
-  color: #7aab13;
+  color: #269972;
 }
 
 .col-explanation a {
@@ -129,12 +127,12 @@ a:hover {
 .feature {
   float: left;
   display: inline;
-  color: #7aab13;
+  color: #269972;
   font-weight: 400;
 }
 
 footer {
-  background-color: #333;
+  background-color: #222;
   color: #ffffff;
 }
 
@@ -166,17 +164,17 @@ footer .footer-left {
 }
 
 .speaker .speaker-name {
-  color: #7aab13;
+  color: #269972;
 }
 
 .speaker .speaker-talk {
   font-size: 0.7em;
-  color: #7aab13;
+  color: #269972;
   display: none;
 }
 
 .speaker a {
-  color: #7aab13;
+  color: #269972;
   font-weight: 600;
 }
 
@@ -193,12 +191,20 @@ footer .footer-left {
 }
 
 .schedule .schedule-table-workshop {
-  color: #333;
+  color: #222;
   font-weight: normal;
 }
 
+.workshop .schedule-date {
+  padding-bottom: 0.8em !important;
+}
+
+.workshop h4 {
+  margin-top: 0;
+}
+
 tbody th {
-  color: #333;
+  color: #222;
   font-weight: 400;
   text-align: left;
   width: 125px;
@@ -216,22 +222,22 @@ tbody td {
 thead td {
   font-weight: 800;
   text-align: left;
-  color: #333;
+  color: #222;
   padding-bottom: 1em !important;
 }
 
 table {
   width: 100%;
   border: none;
-  color: #7aab13;
-  font-weight: 600;
+  color: #269972;
+  font-weight: 400;
   padding-bottom: 1em;
 }
 
 .sponsors .sponsor {
   display: block;
   height: 200px;
-  background-size: 50%;
+  background-size: 75%;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -240,18 +246,22 @@ table {
   display: none;
 }
 
+.sponsors .npm {
+  background-size: 50%;
+}
+
+.sponsors .YLD {
+  background-size: 35%;
+}
+
 .sponsors-table tr td {
   font-weight: normal;
   font-size: 16px;
-  color: #333;
+  color: #222;
   padding: 5px;
 }
 
 @media (max-width: 1000px) {
-  .header a.btn {
-    padding: 0.5rem 0.6rem;
-    font-size: 1.2em;
-  }
   .logo {
     min-width: 205px !important;
     margin-bottom: 0.2em;
@@ -281,10 +291,18 @@ table {
   }
   .conf-title,
   .venue-location {
-    color: #333;
+    color: #222;
+  }
+  .header a.btn, .schedule a.btn {
+    padding: 0.5rem 0.6rem;
+    font-size: 1.2em;
   }
 }
 
 .coc {
   font-size: 1.2em;
+}
+
+.trainer-portrait {
+  width: 100%;
 }
