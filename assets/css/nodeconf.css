@@ -12,9 +12,6 @@ body {
 .header {
   background: #222 url("/assets/img/bg-full.svg") no-repeat center center fixed;
   background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   color: #222;
   padding: 0;
@@ -82,6 +79,10 @@ body {
   text-decoration: none;
   background-color: #1e7a5b;
   color: #ffffff;
+}
+
+.venue {
+  background-color: #eee;
 }
 
 .venue-location {
@@ -164,7 +165,7 @@ footer .footer-left {
 
 .speaker .speaker-portrait {
   border-radius: 50%;
-  width: 45%;
+  width: 55%;
 }
 
 .speaker .speaker-name {
@@ -301,6 +302,9 @@ table {
     padding: 0.5rem 0.6rem;
     font-size: 1.2em;
   }
+  #map {
+    height: 200px !important;
+  }
 }
 
 .coc {
@@ -313,4 +317,30 @@ table {
 
 .workshop-title {
   color: #269972;
+}
+
+.sponsor-card {
+  background-color: #eee;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin-bottom: 1.5em;
+}
+
+.sponsor-card:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+#map {
+  height: 475px;
+  width: auto;
+}
+
+.nodeconf-photo {
+  background: url("/assets/img/nodeconfbcn.jpeg") no-repeat center center fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 250px;
 }
