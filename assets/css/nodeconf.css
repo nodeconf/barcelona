@@ -28,7 +28,6 @@ ul, li {
   padding: 0;
   margin: 0;
   text-align: center;
-  padding-bottom: 200px;
   height: 100vh;
 }
 
@@ -93,11 +92,17 @@ ul, li {
 .wrapper {
   color: #222;
   padding: 1em;
+  position: absolute;
   margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 550px;
+  max-height: 500px;
 }
 
 .wrap {
-  height: 215px;
   margin: 0 auto;
   padding: 2em;
 }
@@ -108,15 +113,15 @@ ul, li {
 
 .logo img {
   max-width: 250px;
-  margin-top: 108px;
   position: relative;
 }
 
 .logo::before {
   background-image: url("/assets/img/sun@2x.png");
+  opacity: 0.9;
   position: absolute;
   left: 50%;
-  top: 256px;
+  margin-top: 125px;
   max-width: 440px;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -207,6 +212,10 @@ a.button:after {
   border-radius: 3px;
 }
 
+a.button:hover {
+  border-radius: 3px;
+}
+
 a.button:hover:before {
   left: -50px;
   top: -20px;
@@ -240,7 +249,10 @@ footer .credits a, footer .credits b {
 @media (max-width: 767px) {
   .footer-right,
   .footer-left {
-    text-align: center !important;
+    text-align: center  !important;
+  }
+  ul {
+    padding: 0;
   }
   .conf-title {
     font-size: 1.3em;
