@@ -7,16 +7,42 @@ body {
   font-weight: 300;
   padding: 0;
   overflow-x: hidden;
-  background: #391e45;
+  color: #b8a8bf;
+  background: #100913;
 }
 
 a {
-  color: #ff7f7f;
+  color: white;
   text-decoration: none;
+}
+
+a:hover {
+  color: #d69d9d;
+}
+
+h2, h4 {
+  color: white;
 }
 
 ul, li {
   list-style: none;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.page-wrap {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .header {
@@ -85,8 +111,8 @@ ul, li {
 
 .header-title {
   font-size: 1.8em !important;
-  margin-top: 30px;
-  color: rgba(57, 30, 69, 0.9);
+  margin-top: 40px;
+  color: #391e45;
 }
 
 .wrapper {
@@ -162,21 +188,21 @@ ul, li {
   font-size: 0.8em;
   margin-top: -20px;
   margin-bottom: 40px;
-  color: rgba(57, 30, 69, 0.9);
+  color: #100913;
 }
 
 .venue-location a {
-  color: rgba(57, 30, 69, 0.9);
+  color: #100913;
 }
 
 .venue-location a:hover {
-  color: rgba(57, 30, 69, 0.9);
+  color: #100913;
 }
 
 a.button {
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
+  font-size: 0.7em;
   display: inline-block;
   padding: 20px 30px;
   position: relative;
@@ -221,8 +247,78 @@ a.button:hover:before {
   top: -20px;
 }
 
+section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+section.get-there {
+  background: #241929;
+}
+
+section.get-there h4 {
+  color: white;
+}
+
+section.get-there em {
+  color: white;
+  font-style: normal;
+}
+
+section.get-there p, section.get-there li {
+  font-size: 0.8em;
+  color: #b8a8bf;
+}
+
+section.get-there #map {
+  margin-top: 20px;
+}
+
+#sponsors-page {
+  background: #241929;
+}
+
+#sponsors-page p {
+  font-size: 0.7em;
+}
+
+#sponsors-page .sponsors-table {
+  margin-bottom: 2em;
+  border: 1px solid;
+}
+
+#sponsors-page .sponsors-table tr td {
+  font-weight: normal;
+  font-size: 0.7em;
+  color: #b8a8bf;
+  padding: 5px;
+  text-align: center;
+  border-right: 1px solid;
+  border-top: 1px solid;
+}
+
+#sponsors-page .sponsors-table tr td.text-center {
+  background-color: #100913;
+}
+
+#sponsors-page .sponsors-table tr td:last-child {
+  border-right: none;
+}
+
+#sponsors-page .sponsors-table tr th {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  background-color: #100913;
+}
+
+#sponsors-page .sponsors-table tfoot tr td p {
+  font-size: 0.9em;
+}
+
 footer {
-  background-color: rgba(57, 30, 69, 0.9);
+  background-color: #100913;
   color: #ffffff;
 }
 
@@ -246,7 +342,34 @@ footer .credits a, footer .credits b {
   font-size: 0.7rem;
 }
 
+@media (max-width: 1024px) {
+  #sponsors-page .content {
+    padding: 0 1em;
+  }
+}
+
+@media (max-width: 991px) {
+  .get-there {
+    padding-bottom: 0;
+  }
+  .get-there .page-wrap {
+    text-align: center;
+  }
+  .get-there .table-responsive p {
+    text-align: center;
+  }
+  footer .page-wrap {
+    padding: 0 2em;
+  }
+}
+
 @media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
   .footer-right,
   .footer-left {
     text-align: center  !important;
@@ -269,9 +392,25 @@ footer .credits a, footer .credits b {
   .header-title {
     font-size: 1.4em !important;
     margin-top: 30px;
-    color: rgba(57, 30, 69, 0.9);
+    color: #100913;
   }
   .venue-location {
     margin-top: -20px;
+  }
+  .get-there {
+    padding-bottom: 0;
+  }
+  .get-there .page-wrap {
+    text-align: center;
+  }
+  #sponsors-page .content {
+    padding: 0 1em;
+  }
+  #sponsors-page .table-responsive p {
+    text-align: center;
+    padding: 0 2em;
+  }
+  #sponsors-page .sponsors-table {
+    width: 100%;
   }
 }
