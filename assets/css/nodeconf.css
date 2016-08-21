@@ -52,7 +52,6 @@ ul, li {
   animation: SunsetGradient 101s linear infinite;
   background-size: 1000% 1000%;
   padding: 0;
-  margin: 0;
   text-align: center;
   height: 100vh;
 }
@@ -253,7 +252,7 @@ section {
 }
 
 section.get-there {
-  background: #241929;
+  background: #100913;
 }
 
 section.get-there h4 {
@@ -266,12 +265,53 @@ section.get-there em {
 }
 
 section.get-there p, section.get-there li {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #b8a8bf;
 }
 
 section.get-there #map {
   margin-top: 20px;
+}
+
+section#team {
+  background: #241929;
+}
+
+section#team .col-md-4 {
+  margin-bottom: 40px;
+}
+
+section#team .hex-wrap {
+  position: relative;
+}
+
+section#team .bg-img {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: 5px;
+}
+
+section#team .hex-wrap::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-image: url("/assets/img/hex-mask.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  z-index: 1;
+  pointer-events: none;
+}
+
+section#team p {
+  font-size: 0.7em;
 }
 
 #sponsors-page {
@@ -320,6 +360,7 @@ section.get-there #map {
 footer {
   background-color: #100913;
   color: #ffffff;
+  margin: 0 0 1em 0;
 }
 
 footer .logo-footer-bcnjs {
@@ -358,6 +399,12 @@ footer .credits a, footer .credits b {
   .get-there .table-responsive p {
     text-align: center;
   }
+  #team .col-md-4 {
+    margin-bottom: 20px !important;
+  }
+  #team .page-wrap {
+    text-align: center;
+  }
   footer .page-wrap {
     padding: 0 2em;
   }
@@ -392,7 +439,6 @@ footer .credits a, footer .credits b {
   .header-title {
     font-size: 1.4em !important;
     margin-top: 30px;
-    color: #100913;
   }
   .venue-location {
     margin-top: -20px;
