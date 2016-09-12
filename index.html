@@ -7,6 +7,8 @@
     <title>NodeConf Barcelona 2016</title>
     <link rel="stylesheet" href="/assets/css/flexboxgrid.min.css">
     <link rel="stylesheet" href="/assets/css/nodeconf.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="/assets/main.js" /></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <meta property="og:site_name" content="NodeConf Barcelona">
     <meta property="og:title" content="NodeConf Barcelona">
@@ -41,93 +43,201 @@
                         <a href="https://www.papercall.io/nodeconf-barcelona-2016" target="_blank"  class="button">CALL FOR SPEAKERS</a>
   
                     </div>
-  
                 </div>
             </div>
         </div>
     </div>
+    <div class='scroll-down desktop'></div>
   </div>
+  
+  <div class="nav-menu" id="header">
+    <nav class="page-wrap">
+      <ul>
+        <li class="logo-wrap"><a href="/" ><img class="nav-logo" src="/assets/img/nodeconf.svg"> <span>   · Barcelona 2016</span> </a></li>
+        <li class="menu-button" id="open-menu"><i class="fa fa-bars" aria-hidden="true"></i></li>
+        <li><a href="/code-conduct.html">Code of conduct</a></li>
+        <li><a href="/#sponsors">Sponsors</a></li>
+        <li ><a href="/#team">Team</a></li>
+        <li><a href="/#get-there">Venue</a></li>
+      </ul>
+    </nav>
+    <div class="menu-mobile mobile" id="menu">
+      <ul class="page-wrap">
+        <li><a href="/#get-there">Venue</a></li>
+        <li><a href="/#sponsors">Sponsors</a></li>
+        <li ><a href="/#team">Team</a></li>
+        <li><a href="/code-conduct.html">Code of conduct</a></li>
+        <li id="close-menu"> <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-times fa-stack-1x fa-inverse" aria-hidden="true"></i></span></li>
+      </ul>
+    </div>
+  </div>
+    <section id="event">
+      <div class="page-wrap">
+          <div class="col-md-6 col-xs-12">
+          <h2>The Event</h2>
+          <p>A one-day not-for-profit conference about node.js, server-side and embedded JavaScript technologies in Barcelona.</p>
+          <ul>
+            <li class="">
+              · One day, one track
+            </li>
+    
+            <li class="">
+              · Workshops and activities
+            </li>
+    
+            <li class="">
+              · Coffee breaks at the venue
+            </li>
+    
+            <li class="">
+              · All English talks
+            </li>
+          </ul>
+          <img class="mobile" src="/assets/img/bcn-fondo.png">
+    
+        </div>
+        <div class="col-md-6 col-xs-3 desktop">
+          <img data-pin-nopin="true" src="/assets/img/bcn-fondo.png">
+        </div>
+      </div>
+    </section>
+    <section id ="get-there" class="get-there">
+      <div class="page-wrap">
+        <h2>Venue</h2>
+        <div class="row">
+          <div class="col-md-7 col-xs-12">
+            <h4>How to get there</h4>
+            <p>Conference is held in the <a href="https://www.mobileworldcentre.com" target="_blank">Mobile World Centre.</a> <br> C/ Fontanella 2, 08001 Barcelona</p>
+    
+            <p>Public transport stop is <em>Plaça Catalunya</em>. <br>You can get there by:</p>
+            <ul>
+              <li>· Metro (<a href="http://www.tmb.cat/en/home" target="_blank">TMB</a>)</li>
+              <li>· Train (<a href="http://www.fgc.cat/eng/" target="_blank">FGC</a> · <a href="http://www20.gencat.cat/portal/site/rodalies/menuitem.9e250df67e11eb0471738010b0c0e1a0/?vgnextoid=f91a3dfb39fbb210VgnVCM1000000b0c1e0aRCRD&amp;vgnextchannel=f91a3dfb39fbb210VgnVCM1000000b0c1e0aRCRD&amp;vgnextfmt=default"
+              target="_blank">RENFE</a>)</li>
+              <li>· Bus (<a href="http://www.tmb.cat/en/home" target="_blank">TMB</a> · <a href="http://www.aerobusbcn.com/" target="_blank">Aerobus</a>).
+            </ul>
+          </div>
+    
+            <iframe id="map" class="col-md-5 col-xs-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.4068436579723!2d2.16953381514827!3d41.3869701792643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f1189933d5%3A0xdadcb01c53af6c88!2sMobile+World+Centre!5e0!3m2!1sca!2ses!4v1471449733118"  frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+        </div>
+      </div>
+      <div class="page-wrap" id="venue-location">
+        <h4>Mobile World Center</h4>
+        <!-- <div class="row center-xs">
+          <div class="col-md-12 bg-img big" >
+            <img src="/assets/img/venue/venue-panel.jpg">
+          </div>
+        </div> -->
+        <div class="row center-xs">
+          <div class="col-md-3 col-sm-3 col-xs-6 text-center">
+            <div class="hex-wrap">
+              <div class="bg-img" style="background-image:url(/assets/img/venue/venue-attending.jpg)">
+              </div>
+            </div>
+    
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6 text-center">
+            <div class="hex-wrap">
+              <div class="bg-img" style="background-image:url(/assets/img/venue/venue-panel.jpg)">
+              </div>
+            </div>
+    
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6 text-center">
+            <div class="hex-wrap">
+              <div class="bg-img" style="background-image:url(/assets/img/venue/venue-room.jpg)">
+              </div>
+            </div>
+    
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6 text-center">
+            <div class="hex-wrap">
+              <div class="bg-img" style="background-image:url(/assets/img/venue/venue-registration.jpg)">
+              </div>
+            </div>
+    
+          </div>
+    
+        </div>
+      </div>
+    </section>
 
-
-   <section id ="get-there" class="get-there">
-     <div class="page-wrap">
-       <h4>HOW TO GET THERE</h4>
-       <div class="row">
-         <div class="col-md-7 col-xs-12">
-   
-           <p>Conference is held in the <a href="https://www.mobileworldcentre.com" target="_blank">Mobile World Centre.</a> <br> C/ Fontanella 2, 08001 Barcelona</p>
-   
-           <p>Public transport stop is <em>Plaça Catalunya</em>. You can get there by:</p>
-           <ul>
-             <li>- Metro (<a href="http://www.tmb.cat/en/home" target="_blank">TMB</a>)</li>
-             <li>- Train (<a href="http://www.fgc.cat/eng/" target="_blank">FGC</a> · <a href="http://www20.gencat.cat/portal/site/rodalies/menuitem.9e250df67e11eb0471738010b0c0e1a0/?vgnextoid=f91a3dfb39fbb210VgnVCM1000000b0c1e0aRCRD&amp;vgnextchannel=f91a3dfb39fbb210VgnVCM1000000b0c1e0aRCRD&amp;vgnextfmt=default"
-             target="_blank">RENFE</a>)</li>
-             <li>- Bus (<a href="http://www.tmb.cat/en/home" target="_blank">TMB</a> · <a href="http://www.aerobusbcn.com/" target="_blank">Aerobus</a>).
-           </ul>
-         </div>
-       
-           <iframe id="map" class="col-md-5 col-xs-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.4068436579723!2d2.16953381514827!3d41.3869701792643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f1189933d5%3A0xdadcb01c53af6c88!2sMobile+World+Centre!5e0!3m2!1sca!2ses!4v1471449733118"  frameborder="0" style="border:0" allowfullscreen></iframe>
-   
-       </div>
-     </div>
-   </section>
-   <section id="team">
-     <div class="page-wrap">
-       <h4>TEAM</h4>
-       <div class="row">
-   
-         <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-           <div class="hex-wrap">
-             <div class="bg-img" style="background-image:url(/assets/img/team/fernando.jpg)">
-             </div>
-           </div>
-   
-           <a href="https://twitter.com/_fmcfm"><p> Fernando </p></a>
-         </div>
-         <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-           <div class="hex-wrap">
-             <div class="bg-img" style="background-image:url(/assets/img/team/xicombd.jpg)">
-             </div>
-           </div>
-   
-           <a href="https://twitter.com/xicombd"><p> Francesc </p></a>
-         </div>
-         <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-           <div class="hex-wrap">
-             <div class="bg-img" style="background-image:url(/assets/img/team/xescugc.png)">
-             </div>
-           </div>
-   
-           <a href="https://twitter.com/xescugc"><p> Francisco </p></a>
-         </div>
-         <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-           <div class="hex-wrap">
-             <div class="bg-img" style="background-image:url(/assets/img/team/helenavicart.jpg)">
-             </div>
-           </div>
-   
-           <a href="https://twitter.com/helenavicart"><p> Helena </p></a>
-         </div>
-         <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-           <div class="hex-wrap">
-             <div class="bg-img" style="background-image:url(/assets/img/team/ivanfraixedes.jpg)">
-             </div>
-           </div>
-   
-           <a href="https://twitter.com/ifraixedes"><p> Ivan </p></a>
-         </div>
-         <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-           <div class="hex-wrap">
-             <div class="bg-img" style="background-image:url(/assets/img/team/patrickheneise.jpg)">
-             </div>
-           </div>
-   
-           <a href="https://twitter.com/PatrickHeneise"><p> Patrick </p></a>
-         </div>
-   
-       </div>
-     </div>
-   </section>
+    <section id="team">
+      <div class="page-wrap">
+        <h2>Team</h2>
+        <div class="row">
+    
+          <div class="col-md-4 col-sm-4 col-xs-6 text-center">
+            <div class="hex-wrap">
+              <div class="bg-img" style="background-image:url(/assets/img/team/fernando.jpg)">
+              </div>
+            </div>
+    
+            <a href="https://twitter.com/_fmcfm"><p> Fernando </p></a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6 text-center">
+            <div class="hex-wrap">
+              <div class="bg-img" style="background-image:url(/assets/img/team/xicombd.jpg)">
+              </div>
+            </div>
+    
+            <a href="https://twitter.com/xicombd"><p> Francesc </p></a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6 text-center">
+            <div class="hex-wrap">
+              <div class="bg-img" style="background-image:url(/assets/img/team/xescugc.png)">
+              </div>
+            </div>
+    
+            <a href="https://twitter.com/xescugc"><p> Francisco </p></a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6 text-center">
+            <div class="hex-wrap">
+              <div class="bg-img" style="background-image:url(/assets/img/team/helenavicart.jpg)">
+              </div>
+            </div>
+    
+            <a href="https://twitter.com/helenavicart"><p> Helena </p></a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6 text-center">
+            <div class="hex-wrap">
+              <div class="bg-img" style="background-image:url(/assets/img/team/ivanfraixedes.jpg)">
+              </div>
+            </div>
+    
+            <a href="https://twitter.com/ifraixedes"><p> Ivan </p></a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6 text-center">
+            <div class="hex-wrap">
+              <div class="bg-img" style="background-image:url(/assets/img/team/patrickheneise.jpg)">
+              </div>
+            </div>
+    
+            <a href="https://twitter.com/PatrickHeneise"><p> Patrick </p></a>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    <section id="sponsors">
+      <div class="page-wrap">
+        <h2>Sponsors</h2>
+        <div class="row center-xs">
+    
+          <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+            <a href="https://www.mobileworldcentre.com/"><div class="hex-wrap">
+              <div class="bg-img" style="background-image:url(/assets/img/mwc-white.svg)">
+              </div>
+            </div>
+          </a>
+          </div>
+        <div class="col-xs-12">
+          <p>We're still looking for more amazing companies willing to support this event.</br><span> Sponsorship information can be found <a href="/sponsors.html">here</a>.</span></p>
+        </div>
+        </div>
+      </div>
+    </section>
 
 <footer class="footer">
   <div class="page-wrap">
@@ -138,11 +248,23 @@
       </div>
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-xl-4">
-        <h6>A BarcelonaJS event</h6>
-        <a href="http://barcelonajs.org">
-          <img class="logo-footer-bcnjs" src="assets/img/logo_bcnjs@2x.png" alt="BarcelonaJS Logo">
+        <h6>Organized by <a href="http://blended.io">blended.io</a></h6>
+        <a href="http://blended.io">
+          <img class="logo-footer-blended" src="assets/img/blended.png" alt="blended Logo">
         </a>
       </div>
+
+    </div>
+  </div>
+  <div class="contact">
+
+    <div class="wrap">
+        <h6> Barcelona NodeConf · 2016 </h6>
+      <!-- <h6>Organisers, sponsors and attendees are required to follow the <a target="_blank" href="/code-conduct.html"><b>Code of Conduct</b></a> </h6> -->
+      <span class="link-wrap">
+        <a target="_blank" href="https://twitter.com/NodeConfBcn"><i class="fa fa-twitter"></i></a>
+        <a target="_blank" href="mailto:nodeconf@blended.io"><i class="fa fa-envelope"></i></a>
+      </span>
     </div>
   </div>
 </footer>
