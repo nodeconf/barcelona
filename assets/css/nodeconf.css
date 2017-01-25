@@ -602,6 +602,10 @@ footer .cookies {
   font-size: 13px;
 }
 
+footer .cookies p {
+  margin: 0;
+}
+
 footer .cookies a {
   text-decoration: underline;
 }
@@ -611,18 +615,24 @@ footer .cookies a, footer .cookies button {
 }
 
 footer .cookies button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
   padding: 0;
-  margin: 0;
+  margin: -12px 0 0;
   background: transparent;
   border: none;
   color: #fff;
-  float: right;
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
 }
 
 footer .cookies .container {
+  box-sizing: border-box;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
 }
 
 footer .cookies.is-open {
