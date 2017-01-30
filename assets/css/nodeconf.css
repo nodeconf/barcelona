@@ -523,7 +523,7 @@ section#team p {
   border-color: #b8a8bf;
 }
 
-#code-conduct .styled-list li {
+#code-conduct ul li {
   font-size: 0.7em;
   list-style-type: circle;
 }
