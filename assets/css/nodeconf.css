@@ -69,7 +69,7 @@ ul, li {
   border-radius: 25px;
   position: absolute;
   bottom: 2em;
-  margin-left: 50%;
+  margin-left: 49%;
 }
 
 .header .scroll-down:before {
@@ -433,20 +433,20 @@ section#sponsors .hex-wrap .bg-img {
   background-position: 50%;
 }
 
-section#team {
+section#team, #speakers {
   text-align: center;
   background: #241929;
 }
 
-section#team .col-md-4 {
+section#team .col-md-4, #speakers .col-md-4 {
   margin-bottom: 40px;
 }
 
-section#team .hex-wrap {
+section#team .hex-wrap, #speakers .hex-wrap {
   position: relative;
 }
 
-section#team .bg-img {
+section#team .bg-img, #speakers .bg-img {
   height: 150px;
   width: 150px;
   margin: 0 auto;
@@ -454,7 +454,7 @@ section#team .bg-img {
   background-position: 5px;
 }
 
-section#team .hex-wrap::after {
+section#team .hex-wrap::after, #speakers .hex-wrap::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -471,8 +471,22 @@ section#team .hex-wrap::after {
   pointer-events: none;
 }
 
-section#team p {
-  font-size: 0.7em;
+section#team p, #speakers p {
+  font-size: 0.8em;
+}
+
+section#team p.big-fontsize, #speakers p.big-fontsize {
+  font-size: 1.2rem;
+}
+
+section#speakers p {
+  margin-top: 0;
+}
+
+section#speakers p.big-fontsize {
+  font-size: 1.2rem;
+  margin-top: .5rem;
+  margin-bottom: 0;
 }
 
 #sponsors-page {
