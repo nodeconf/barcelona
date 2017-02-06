@@ -484,6 +484,10 @@ section#team p {
   line-height: 1.6em;
 }
 
+#sponsors-page .sponsors-table-wrapper {
+  overflow-x: auto;
+}
+
 #sponsors-page .sponsors-table {
   margin-bottom: 2em;
   border: 1px solid;
@@ -513,6 +517,14 @@ section#team p {
   letter-spacing: 2px;
   font-size: 0.8em;
   background-color: #100913;
+}
+
+#sponsors-page .sponsors-table tr th h4 {
+  margin: 14px;
+}
+
+#sponsors-page .sponsors-table tr th p {
+  font-size: 0.6em;
 }
 
 #sponsors-page .sponsors-table tfoot tr td p {
