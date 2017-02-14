@@ -421,17 +421,13 @@ section#sponsors p span {
   font-weight: 100;
 }
 
-section#sponsors .hex-wrap {
-  background: white;
-  border-radius: 2px;
+section#sponsors .event-host {
+  margin-bottom: 40px;
 }
 
-section#sponsors .hex-wrap .bg-img {
-  height: 100px;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
+section#sponsors .sponsor-img {
+  width: 100%;
+  margin-top: 40px;
 }
 
 section#team, #speakers {
