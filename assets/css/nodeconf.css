@@ -426,7 +426,8 @@ section#sponsors .event-host {
 }
 
 section#sponsors .sponsor-img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 250px;
   margin-top: 40px;
 }
 
