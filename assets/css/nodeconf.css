@@ -789,8 +789,14 @@ section {
   padding-bottom: 2em;
 }
 
+section img.icon {
+  height: 100px;
+  width: auto;
+}
+
 section h2 {
   padding-bottom: 1.5em;
+  margin-top: 0;
 }
 
 #code-conduct hr {
