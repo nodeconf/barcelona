@@ -52,7 +52,7 @@ section#event .col-md-6.col-md-6:last-child {
 
 #speakers {
   text-align: center;
-  background: #1e1123;
+  background: #2e1e35;
 }
 
 #speakers .col-md-4 {
@@ -154,7 +154,7 @@ section#event .col-md-6.col-md-6:last-child {
 }
 
 #sponsors-page .sponsors-table tr td.text-center {
-  background-color: #1e1123;
+  background-color: #2e1e35;
 }
 
 #sponsors-page .sponsors-table tr td:last-child {
@@ -166,7 +166,7 @@ section#event .col-md-6.col-md-6:last-child {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.8em;
-  background-color: #1e1123;
+  background-color: #2e1e35;
 }
 
 #sponsors-page .sponsors-table tr th h4 {
@@ -187,7 +187,7 @@ section#sponsors {
 }
 
 section#sponsors a.button.sponsors:after {
-  background: #1e1123 !important;
+  background: #2e1e35 !important;
 }
 
 section#sponsors a.button.sponsors:before {
@@ -199,7 +199,7 @@ section#sponsors a.button.sponsors:hover:before {
 }
 
 section#sponsors a.button.sponsors:hover:after {
-  background: #1e1123 !important;
+  background: #2e1e35 !important;
 }
 
 section#sponsors p {
@@ -263,7 +263,7 @@ section#sponsors .row {
 }
 
 #sponsors-page .sponsors-table tr td.text-center {
-  background-color: #1e1123;
+  background-color: #2e1e35;
 }
 
 #sponsors-page .sponsors-table tr td:last-child {
@@ -275,7 +275,7 @@ section#sponsors .row {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.8em;
-  background-color: #1e1123;
+  background-color: #2e1e35;
 }
 
 #sponsors-page .sponsors-table tr th h4 {
@@ -310,7 +310,7 @@ section#sponsors .row {
 }
 
 section.get-there {
-  background: #1e1123;
+  background: #2e1e35;
 }
 
 section.get-there h4 {
@@ -459,7 +459,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   color: #b8a8bf;
-  background: #1e1123;
+  background: #2e1e35;
 }
 
 a {
@@ -516,7 +516,7 @@ ul, li {
   width: 25px;
   height: 44px;
   margin: 160px auto 0 auto;
-  box-shadow: inset 0 0 0 1px #1e1123;
+  box-shadow: inset 0 0 0 1px #2e1e35;
   border-radius: 25px;
   position: absolute;
   bottom: 2em;
@@ -528,7 +528,7 @@ ul, li {
   position: absolute;
   width: 4px;
   height: 4px;
-  background: #1e1123;
+  background: #2e1e35;
   margin-left: -2px;
   top: 10px;
   border-radius: 4px;
@@ -674,15 +674,15 @@ ul, li {
   font-size: 0.8em;
   margin-top: -20px;
   margin-bottom: 40px;
-  color: #1e1123;
+  color: #2e1e35;
 }
 
 .venue-location a {
-  color: #1e1123;
+  color: #2e1e35;
 }
 
 .venue-location a:hover {
-  color: #1e1123;
+  color: #2e1e35;
 }
 
 a.button {
@@ -781,7 +781,7 @@ a.button:hover:before {
 #header.is-fixed {
   position: fixed;
   top: 0;
-  box-shadow: -5px 3px 16px #1e1123;
+  box-shadow: -5px 3px 16px #2e1e35;
 }
 
 section {
@@ -803,7 +803,7 @@ section h2 {
 }
 
 footer {
-  background-color: #1e1123;
+  background-color: #2e1e35;
   color: #ffffff;
 }
 
@@ -829,7 +829,7 @@ footer .footer-left {
 }
 
 footer .contact {
-  background: #0a060c;
+  background: #1e1123;
   text-align: center;
 }
 
@@ -954,7 +954,7 @@ footer .cookies.is-open {
     height: 100vh;
     width: 100%;
     flex-wrap: wrap;
-    background: #1e1123;
+    background: #2e1e35;
   }
   #header .menu-mobile ul {
     margin: 20% auto;
@@ -977,7 +977,7 @@ footer .cookies.is-open {
     opacity: 0.6;
   }
   #header .menu-mobile ul li .fa-inverse {
-    color: #1e1123;
+    color: #2e1e35;
   }
   .page-wrap {
     text-align: center;
