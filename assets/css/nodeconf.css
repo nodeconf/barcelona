@@ -125,60 +125,22 @@ section#event .col-md-6.col-md-6:last-child {
   letter-spacing: 1px;
 }
 
-#sponsors-page {
-  background: #36263e;
+#speakers #show-modal {
+  cursor: pointer;
 }
 
-#sponsors-page p {
-  font-size: 0.8em;
-  line-height: 1.6em;
+#speakers .modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: #1e1123;
+  z-index: 3;
+  left: 0;
+  right: 0;
 }
 
-#sponsors-page .sponsors-table-wrapper {
-  overflow-x: auto;
-}
-
-#sponsors-page .sponsors-table {
-  margin-bottom: 2em;
-  border: 1px solid;
-}
-
-#sponsors-page .sponsors-table tr td {
-  font-weight: normal;
-  font-size: 0.7em;
-  color: #b8a8bf;
-  padding: 5px;
-  text-align: center;
-  border-right: 1px solid;
-  border-top: 1px solid;
-}
-
-#sponsors-page .sponsors-table tr td.text-center {
-  background-color: #2e1e35;
-}
-
-#sponsors-page .sponsors-table tr td:last-child {
-  border-right: none;
-}
-
-#sponsors-page .sponsors-table tr th {
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.8em;
-  background-color: #2e1e35;
-}
-
-#sponsors-page .sponsors-table tr th h4 {
-  margin: 14px;
-}
-
-#sponsors-page .sponsors-table tr th p {
-  font-size: 0.6em;
-}
-
-#sponsors-page .sponsors-table tfoot tr td p {
-  font-size: 0.9em;
+#speakers .modal.is-shown {
+  display: block;
 }
 
 section#sponsors {
