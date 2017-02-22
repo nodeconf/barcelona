@@ -71,20 +71,26 @@ section#event .col-md-6.col-md-6:last-child {
 
 #speakers .hex-wrap {
   position: relative;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
 #speakers .img {
-  height: 220px;
-  width: 220px;
+  cursor: pointer;
+  height: 210px;
+  width: 210px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: 5px;
-  mix-blend-mode: luminosity;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 #speakers .img:hover {
-  mix-blend-mode: normal;
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
 }
 
 #speakers .hex-wrap::after {
@@ -92,7 +98,7 @@ section#event .col-md-6.col-md-6:last-child {
   left: 0;
   top: 0;
   width: 100%;
-  height: 97%;
+  height: 100%;
   content: '';
   background-image: url("/assets/img/hex-mask-dark.svg");
   background-position: center center;
@@ -123,15 +129,19 @@ section#event .col-md-6.col-md-6:last-child {
 
 #speakers h4 {
   letter-spacing: 1px;
+  margin-top: 0;
 }
 
-#speakers #show-modal {
+#speakers #close-box, #speakers #show-box {
   cursor: pointer;
 }
 
-#speakers .modal {
-  width: 100%;
-  height: 100%;
+#speakers .modal-box {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  padding: 10px 20px;
+  margin: 0 auto;
   display: none;
   background: #1e1123;
   z-index: 3;
@@ -139,7 +149,11 @@ section#event .col-md-6.col-md-6:last-child {
   right: 0;
 }
 
-#speakers .modal.is-shown {
+#speakers .modal-box p {
+  font-size: 16px;
+}
+
+#speakers .modal-box.is-shown {
   display: block;
 }
 
@@ -356,17 +370,22 @@ section#team .hex-wrap {
 }
 
 section#team .bg-img {
+  cursor: pointer;
   height: 150px;
   width: 150px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: 5px;
   background-size: contain;
-  mix-blend-mode: luminosity;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 section#team .bg-img:hover {
-  mix-blend-mode: normal;
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
 }
 
 section#team .hex-wrap::after {
@@ -794,6 +813,19 @@ footer .footer-right {
 
 footer .footer-left {
   text-align: left;
+}
+
+footer .extra-info {
+  background: #1e1123;
+  font-size: 10px;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+footer .extra-info img {
+  height: 30px;
+  vertical-align: middle;
 }
 
 footer .contact {
