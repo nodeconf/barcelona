@@ -231,6 +231,13 @@ section#sponsors .col-xs-3 .sponsor-img {
   height: auto;
 }
 
+section#sponsors .img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 section#sponsors .row {
   margin-bottom: 2em;
 }
