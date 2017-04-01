@@ -182,6 +182,20 @@ section#event .col-md-6.col-md-6:last-child {
   }
 }
 
+#schedule .time {
+  color: #fefbff;
+  margin-right: 20px;
+}
+
+#schedule .fringe {
+  font-size: 80%;
+}
+
+#schedule .fringe h2 {
+  padding-bottom: 0;
+  margin-right: 10px;
+}
+
 section#sponsors {
   background: #36263e;
   text-align: center;
